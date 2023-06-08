@@ -1,17 +1,23 @@
 
 Declare Sub WaitForKey ()
+
+Declare Sub EnvironmentalIssues ()
 Declare Sub Economy ()
 Declare Sub Food ()
 
+'Load a 400x262 bitmap into an image
+ScreenRes 800, 600, 32
+
+EnvironmentalIssues
 Economy
 Food
 
 Sub Economy
 
-'Load a 400x262 bitmap into an image
-ScreenRes 800, 600, 32
 Dim myImage As Any Ptr = ImageCreate( 400, 266 )
-BLoad "Economy.bmp", myImage
+BLoad "images/Economy.bmp", myImage
+
+cls
 
 print "===================================================================================================="
 print "                                             ECONOMY                                                "
@@ -50,18 +56,67 @@ WaitForKey
 
 END SUB
 
+
+Sub EnvironmentalIssues
+
+Dim myImage As Any Ptr = ImageCreate( 400, 225 )
+BLoad "images/EnvIssues.bmp", myImage
+
+cls
+
+print "===================================================================================================="
+print "                                     ENVIRONMENTAL ISSUES                                           "
+print "===================================================================================================="
+print
+print TAB(13); "1- What environmental issue concerns you the most, and why? Are there any" 
+print TAB(13); "   specific experiences or events that have influenced your perspective on"
+print TAB(13); "   this issue?"
+print
+print
+print
+print TAB(13); "2- How do you personally contribute to environmental conservation and" 
+print TAB(13); "   sustainability in your daily life? Are there any habits or practices" 
+print TAB(13); "   you have adopted that you believe make a positive impact?"
+print
+print
+print
+print TAB(13); "3- Do you believe that individuals alone can make a significant difference" 
+print TAB(13); "   in addressing environmental issues, or do you think collective action and"
+print TAB(13); "   policy changes are necessary? What role do you think governments and" 
+print TAB(13); "   corporations should play in protecting the environment?"
+print
+print
+print
+print TAB(13); "4- Are there any local environmental initiatives or projects in your community"
+print TAB(13); "   that you find inspiring or interesting? Have you ever participated in any" 
+print TAB(13); "   environmental campaigns or activities? If so, what was your experience like?"
+print
+print
+print "===================================================================================================="
+
+Put (200,320), myImage
+
+'ImageDestroy( myImage )
+
+WaitForKey
+
+END SUB
+
+
+
+
 Sub Food
 
-'Load a 400x262 bitmap into an image
-ScreenRes 800, 600, 32
 Dim myImage As Any Ptr = ImageCreate( 400, 262 )
-BLoad "Food.bmp", myImage
+BLoad "images/Food.bmp", myImage
+
+cls
 
 print "===================================================================================================="
 print "                                                FOOD                                                "
 print "===================================================================================================="
 print
-print TAB(13); "1- What is your favorite dish from your country's cuisine? Can you describe" 
+print TAB(13); "1- What is your favorite dish from your country's cuisine? Can you describe"
 print TAB(13); "   the ingredients and the flavors that make it special?"
 print
 print
