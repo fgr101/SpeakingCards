@@ -1,16 +1,60 @@
 
 Declare Sub WaitForKey ()
 
+Declare sub MainMenu ()
+Declare sub RandomCards()
+
 Declare Sub EnvironmentalIssues ()
 Declare Sub Economy ()
 Declare Sub Food ()
+Declare Sub Workout ()
+
+DIM SHARED OptionNumber AS INTEGER
 
 'Load a 400x262 bitmap into an image
 ScreenRes 800, 600, 32
 
+
+MainMenu
+
+
+Sub MainMenu
+
+CLS
+
+print "1- Random Card"
+print "2- Exit"
+print
+input ""; OptionNumber
+
+SELECT CASE OptionNumber
+	
+	CASE 1
+	
+		RandomCards
+		
+	CASE 2
+	
+			END
+	
+	CASE ELSE
+	
+		MainMenu
+
+END SELECT
+
+End Sub
+
+sub RandomCards
+
 EnvironmentalIssues
 Economy
 Food
+Workout
+
+MainMenu
+
+end sub
 
 Sub Economy
 
@@ -135,6 +179,52 @@ print
 print TAB(13); "4- How important is food in your family or culture? Are there any specific"
 print TAB(13); "   traditions or rituals related to meals or certain dishes that you practice" 
 print TAB(13); "   or celebrate?"
+print
+print
+print "===================================================================================================="
+
+Put (200,320), myImage
+
+'ImageDestroy( myImage )
+
+WaitForKey
+
+END SUB
+
+
+Sub Workout
+
+Dim myImage As Any Ptr = ImageCreate( 400, 233 )
+BLoad "images/Workout.bmp", myImage
+
+cls
+
+print "===================================================================================================="
+print "                                WORKOUT AND PHYSICAL ACTIVITY                                       "
+print "===================================================================================================="
+print
+print TAB(13); "1- What types of physical activities or workouts do you enjoy the most?"
+print TAB(13); "   How did you discover your preference for those activities, and what makes"
+print TAB(13); "   them enjoyable for you?"
+print
+print
+print
+print TAB(13); "2- How do you incorporate physical activity into your daily routine? Do you find" 
+print TAB(13); "   it challenging to balance your workout schedule with other commitments?" 
+print TAB(13); "   If so, how do you manage it?"
+print
+print
+print
+print TAB(13); "3- Have you ever set specific fitness goals for yourself? How did you go about" 
+print TAB(13); "   achieving them, and what were the outcomes? Did you face any obstacles along the"
+print TAB(13); "   way, and if so, how did you overcome them?"
+print
+print
+print
+print TAB(13); "4- Do you believe that physical activity has a positive impact on your overall"
+print TAB(13); "   well-being, beyond just physical fitness? How does it affect your mental and" 
+print TAB(13); "   emotional state? Have you noticed any improvements in your productivity or mood"
+print TAB(13); "   as a result of regular exercise?"
 print
 print
 print "===================================================================================================="
