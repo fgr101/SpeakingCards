@@ -1,12 +1,10 @@
-# English Speaking Activity Generator - SpeakingCards
+# SpeakingCards - English Speaking Activity Generator
 
-This simple software creates random topics for speaking activities with English students. Each topic has 4 interesting questions that can spark debates between the teacher and students.
-
-This program has been written using the [FREEBASIC language](https://www.freebasic.net/), a free/open source (GPL), BASIC compiler for Microsoft Windows, DOS and Linux. FreeBASIC is a completely free, open-source, multi-platform BASIC compiler, with syntax similar to MS-QuickBASIC, that adds new features such as pointers, object orientation, unsigned data types, inline assembly, and many others. [FreeBasic On GitHub](https://github.com/freebasic/fbc). 
-
-# English Speaking Activity Generator
+This simple software creates random topics for speaking activities with English students. Each topic has four interesting questions that can spark debates between the teacher and students.
 
 The English Speaking Activity Generator is a software tool designed to facilitate engaging and interactive speaking activities for English language learners. This project aims to provide a platform that generates random discussion topics and thought-provoking questions to spark debates and stimulate conversations in the English language classroom.
+
+This program has been written using the [FREEBASIC language](https://www.freebasic.net/), a free/open source (GPL), BASIC compiler for Microsoft Windows, DOS and Linux. FreeBASIC is a completely free, open-source, multi-platform BASIC compiler, with syntax similar to MS-QuickBASIC, that adds new features such as pointers, object orientation, unsigned data types, inline assembly, and many others. [FreeBasic On GitHub](https://github.com/freebasic/fbc). 
 
 ## Features
 
