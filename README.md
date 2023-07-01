@@ -31,4 +31,4 @@ This project is licensed under the [GNU General Public License v3.0](https://git
 ## Acknowledgments
 
 - The AI question generation component is powered by [ChatGPT](https://chat.openai.com/), an OpenAI language model.
-- Special thanks to [Geany](https://www.geany.org/) for providing a reliable and versatile integrated development environment (IDE) for FreeBASIC development and to the [FreeBasic](https://www.freebasic.net/) developers and its community.
+- Special thanks to [Geany](https://www.geany.org/) for providing a reliable and versatile integrated development environment (IDE) for FreeBASIC and to the [FreeBasic](https://www.freebasic.net/) developers and its community.
