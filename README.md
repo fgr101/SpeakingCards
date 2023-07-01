@@ -1,4 +1,4 @@
-# SpeakingCards - English Speaking Activity Generator
+# Speaking Cards - English Speaking Activity Generator
 
 This simple software creates random topics for speaking activities with English students. Each topic has four interesting questions that can spark debates between the teacher and students.
 
