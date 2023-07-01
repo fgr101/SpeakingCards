@@ -22,7 +22,7 @@ Once the software is installed, simply launch the program and select the desired
 
 ## Contributing
 
-We welcome contributions from the community! If you have ideas for improving the English Speaking Activity Generator or would like to add new features.
+We welcome contributions from the community! If you have ideas for improving the English Speaking Activity Generator or would like to add new features feel free to contribute.
 
 ## License
 
